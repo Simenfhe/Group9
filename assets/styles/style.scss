@@ -1,6 +1,12 @@
 @import 'colors';
 @import 'animations';
 
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
 
 .square{
     background-color: $colour;
@@ -13,4 +19,8 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+div{
+    margin:1%;
 }
