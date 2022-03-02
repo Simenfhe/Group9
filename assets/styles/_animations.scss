@@ -7,3 +7,19 @@
         background-color: blue;
     }
 }
+
+@keyframes n_animation{
+    0%{
+        background-color:limegreen;
+    }
+
+    50%{
+        transform:rotateX(180deg);
+    }
+
+    100%{
+        background-color:indianred;
+        transform:rotateX(-25deg);
+    }
+
+}

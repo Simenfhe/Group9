@@ -21,6 +21,13 @@ main{
     animation-direction: alternate;
 }
 
+#nsquare{
+    animation-name: n_animation;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+}
+
 div{
     margin:1%;
 }

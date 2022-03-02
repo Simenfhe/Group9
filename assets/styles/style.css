@@ -16,6 +16,36 @@
   }
 }
 
+@-webkit-keyframes n_animation {
+  0% {
+    background-color: limegreen;
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    background-color: indianred;
+    -webkit-transform: rotateX(-25deg);
+            transform: rotateX(-25deg);
+  }
+}
+
+@keyframes n_animation {
+  0% {
+    background-color: limegreen;
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    background-color: indianred;
+    -webkit-transform: rotateX(-25deg);
+            transform: rotateX(-25deg);
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +77,16 @@ main {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+
+#nsquare {
+  -webkit-animation-name: n_animation;
+          animation-name: n_animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 div {
