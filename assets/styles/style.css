@@ -1,3 +1,35 @@
-@import url(_colors.scss);
-@import url(_animations.scss);
+@-webkit-keyframes s_animation {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes s_animation {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.square {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+#ssquare {
+  -webkit-animation-name: s_animation;
+          animation-name: s_animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 /*# sourceMappingURL=style.css.map */

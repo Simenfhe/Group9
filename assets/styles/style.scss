@@ -1,2 +1,16 @@
-@import url(_colors.scss);
-@import url(_animations.scss);
+@import 'colors';
+@import 'animations';
+
+
+.square{
+    background-color: $colour;
+    width: 150px;
+    height: 150px;
+}
+
+#ssquare{
+    animation-name: s_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
