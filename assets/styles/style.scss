@@ -3,73 +3,73 @@
 @import "fonts";
 
 body {
-    background-color: $lightbackground;
+  background-color: $lightbackground;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .square {
-    background-color: $colour;
-    width: 150px;
-    height: 150px;
+  background-color: $colour;
+  width: 150px;
+  height: 150px;
 }
 
 #nsquare {
-    animation: none;
-}
-
-#ssquare {
-    animation-name: s_animation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation: none;
 }
 
 div {
-    margin: 1%;
+  margin: 1%;
 }
 
 // Run animation for those who have no preference in reducing motion (since nsquare is a movement based animation)
 
 @media (prefers-reduced-motion: no-preference) {
-    #nsquare {
-        animation-name: n_animation;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-    }
+  #nsquare {
+    animation-name: n_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  #ssquare {
+    animation-name: s_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
 
 // Dark  color scheme preferences
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: $darkbackground;
-    }
+  body {
+    background-color: $darkbackground;
+  }
 
-    .square {
-        background-color: $darkcolour;
-    }
+  .square {
+    background-color: $darkcolour;
+  }
 }
 
 // Change flex direction based on orientation
 
 @media screen and (orientation: landscape) {
-    .container {
-        flex-direction: row;
-    }
+  .container {
+    flex-direction: row;
+  }
 }
 
 @media screen and (orientation: portrait) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }

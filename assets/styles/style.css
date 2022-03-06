@@ -1,18 +1,32 @@
 @-webkit-keyframes s_animation {
   0% {
-    background-color: red;
+    border-radius: 0%;
   }
-  100% {
-    background-color: blue;
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  75% {
+    -webkit-box-shadow: 50px 75px green, -50px 75px red;
+            box-shadow: 50px 75px green, -50px 75px red;
   }
 }
 
 @keyframes s_animation {
   0% {
-    background-color: red;
+    border-radius: 0%;
   }
-  100% {
-    background-color: blue;
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  75% {
+    -webkit-box-shadow: 50px 75px green, -50px 75px red;
+            box-shadow: 50px 75px green, -50px 75px red;
   }
 }
 
@@ -83,17 +97,6 @@ main {
           animation: none;
 }
 
-#ssquare {
-  -webkit-animation-name: s_animation;
-          animation-name: s_animation;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
 div {
   margin: 1%;
 }
@@ -107,6 +110,16 @@ div {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+  }
+  #ssquare {
+    -webkit-animation-name: s_animation;
+            animation-name: s_animation;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
   }
 }
 
