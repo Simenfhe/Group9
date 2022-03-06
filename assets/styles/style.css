@@ -46,6 +46,10 @@
   }
 }
 
+body {
+  background-color: white;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,10 +66,21 @@ main {
           justify-content: center;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .square {
   background-color: blue;
   width: 150px;
   height: 150px;
+}
+
+#nsquare {
+  -webkit-animation: none;
+          animation: none;
 }
 
 #ssquare {
@@ -79,17 +94,46 @@ main {
           animation-direction: alternate;
 }
 
-#nsquare {
-  -webkit-animation-name: n_animation;
-          animation-name: n_animation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-
 div {
   margin: 1%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #nsquare {
+    -webkit-animation-name: n_animation;
+            animation-name: n_animation;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  .square {
+    background-color: darkblue;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
