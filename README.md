@@ -13,6 +13,7 @@ There isn't many easily accessible resources for music production around videoga
 Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
 
 Read more about goal 4 [here](https://www.un.org/sustainabledevelopment/education/).
+
 Getting started
 ==========
 To get started with the project, just follow the steps on our [live website](https://simenfhe.github.io). 
