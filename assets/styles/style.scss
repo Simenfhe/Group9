@@ -14,15 +14,14 @@ main {
 
 .container {
   display: flex;
+  
 }
 
 .square {
+  margin:50px;
   background-color: $colour;
   width: 150px;
   height: 150px;
-}
-
-#nsquare {
   animation: none;
 }
 
@@ -30,28 +29,29 @@ div {
   margin: 1%;
 }
 
-// Run animation for those who have no preference in reducing motion (since nsquare is a movement based animation)
+// Run animation for those who have no preference in reducing motion
 
 @media (prefers-reduced-motion: no-preference) {
-  #nsquare {
+  .square{
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .square--n {
     animation-name: n_animation;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+
   }
 
-  #ssquare {
+  .square--s {
     animation-name: s_animation;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
   }
 
-  #dsquare {
+  .square--d {
     animation-name: d_animation;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
   }
 }
 
