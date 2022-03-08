@@ -62,7 +62,7 @@
 
 @-webkit-keyframes d_animation {
   0% {
-    background-color: aqua;
+    background-color: orange;
   }
   50% {
     -webkit-transform: rotate(180deg);
@@ -76,7 +76,7 @@
 
 @keyframes d_animation {
   0% {
-    background-color: aqua;
+    background-color: orange;
   }
   50% {
     -webkit-transform: rotate(180deg);
