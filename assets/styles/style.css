@@ -62,30 +62,26 @@
 
 @-webkit-keyframes d_animation {
   0% {
-    background-color: aqua;
+    background-color: orange;
   }
-
   50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
-
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
 @keyframes d_animation {
   0% {
-    background-color: aqua;
+    background-color: orange;
   }
-
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
-
   100% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
@@ -119,12 +115,10 @@ main {
 }
 
 .square {
+  margin: 50px;
   background-color: blue;
   width: 150px;
   height: 150px;
-}
-
-#nsquare {
   -webkit-animation: none;
           animation: none;
 }
@@ -134,35 +128,29 @@ div {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #nsquare {
+  .square {
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  .square--n {
     -webkit-animation-name: n_animation;
             animation-name: n_animation;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
   }
-  #ssquare {
+  .square--s {
     -webkit-animation-name: s_animation;
             animation-name: s_animation;
     -webkit-animation-duration: 5s;
             animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
   }
-
-  #dsquare {
+  .square--d {
     -webkit-animation-name: d_animation;
             animation-name: d_animation;
     -webkit-animation-duration: 4s;
             animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
   }
 }
 

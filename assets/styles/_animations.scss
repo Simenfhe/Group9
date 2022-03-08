@@ -30,3 +30,17 @@
     transform: rotateX(-25deg);
   }
 }
+
+@keyframes d_animation {
+  0% {
+    background-color: orange;
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
