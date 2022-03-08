@@ -25,6 +25,9 @@ HTML, SCSS & JavaScript
 Contributers & Contact:
 -----------
 The group members are: 
+
 *Simen / @Simenfhe (mail goes here)*
+
 *Daniel / @DanielHSchumann (mail goes here)*
+
 *Nicolas / @nxtseq (nicollau@stud.ntnu.no)*
