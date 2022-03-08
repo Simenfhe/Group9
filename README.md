@@ -15,15 +15,15 @@ Ensure inclusive and equitable quality education and promote lifelong learning o
 Read more about goal 4 [here](https://www.un.org/sustainabledevelopment/education/).
 
 Getting started
-==========
+-----------
 To get started with the project, just follow the steps on our [live website](https://simenfhe.github.io). 
 
 Technologies
-==========
+-----------
 HTML, SCSS & JavaScript
 
 Contributers & Contact:
-==========
+-----------
 The group members are: 
 *Simen / @Simenfhe (mail goes here)*
 *Daniel / @DanielHSchumann (mail goes here)*
