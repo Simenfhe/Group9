@@ -27,6 +27,6 @@ The group members are:
 
 _Simen / @Simenfhe (simenfhe@stud.ntnu.no)_
 
-_Daniel / @DanielHSchumann (mail goes here)_
+_Daniel / @DanielHSchumann (daniehsc@stud.ntnu.no)_
 
 _Nicolas / @nxtseq (nicollau@stud.ntnu.no)_
