@@ -1,0 +1,51 @@
+// Run animation for those who have no preference in reducing motion
+
+@media (prefers-reduced-motion: no-preference) {
+    .square{
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .square--n {
+      animation-name: n_animation;
+      animation-duration: 3s;
+  
+    }
+  
+    .square--s {
+      animation-name: s_animation;
+      animation-duration: 5s;
+  
+    }
+  
+    .square--d {
+      animation-name: d_animation;
+      animation-duration: 4s;
+  
+    }
+  }
+  
+  // Dark  color scheme preferences
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: $darkbackground;
+    }
+  
+    .square {
+      background-color: $darkcolour;
+    }
+  }
+  
+  // Change flex direction based on orientation
+  
+  @media screen and (orientation: landscape) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (orientation: portrait) {
+    .container {
+      flex-direction: column;
+    }
+  }
