@@ -24,19 +24,16 @@
 
 #mario {
   background-color: grey;
-  width: 800px;
-  height: 800px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50px)[16];
-      grid-template-columns: repeat(16, 50px);
-  -ms-grid-rows: (50px)[16];
-      grid-template-rows: repeat(16, 50px);
-  margin: 0;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  -ms-grid-rows: (1fr)[16];
+      grid-template-rows: repeat(16, 1fr);
 }
 
 .white {
-  background-color: white;
+  background-color: #EBEBD3;
 }
 
 .red {
@@ -601,6 +598,19 @@
   padding: 0;
 }
 
+#header {
+  width: 100vw;
+  height: 30vh;
+  background-color: #517664;
+  display: -ms-grid;
+  display: grid;
+}
+
+#header_spaceinvader {
+  width: 10%;
+  height: auto;
+}
+
 body {
   background-color: #EBEBD3;
 }
@@ -625,5 +635,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#mario {
+  height: 200px;
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
