@@ -2,6 +2,13 @@
 @import "animations";
 @import "fonts";
 @import "media-queries";
+@import "mario";
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: $lightbackground;
@@ -18,10 +25,5 @@ main {
   
 }
 
-
-
-div {
-  margin: 1%;
-}
 
 
