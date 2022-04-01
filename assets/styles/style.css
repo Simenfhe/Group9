@@ -2,9 +2,6 @@
   body {
     background-color: black;
   }
-  .square {
-    background-color: darkblue;
-  }
 }
 
 @media screen and (orientation: landscape) {
