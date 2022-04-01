@@ -10,6 +10,18 @@
   padding: 0;
 }
 
+#header{
+  width: 100vw;
+  height: 30vh;
+  background-color: $frame1color;
+  display: grid;
+}
+
+#header_spaceinvader{
+  width: 10%;
+  height: auto;
+}
+
 body {
   background-color: $backgroundcolor;
 }
@@ -23,6 +35,12 @@ main {
 .container {
   display: flex;
   
+}
+
+
+#mario{
+  height: 200px;
+  width: 200px;
 }
 
 

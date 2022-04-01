@@ -1,18 +1,15 @@
 #mario {
   background-color: grey;
-  width: 800px;
-  height: 800px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50px)[16];
-      grid-template-columns: repeat(16, 50px);
-  -ms-grid-rows: (50px)[16];
-      grid-template-rows: repeat(16, 50px);
-  margin: 0;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  -ms-grid-rows: (1fr)[16];
+      grid-template-rows: repeat(16, 1fr);
 }
 
 .white {
-  background-color: white;
+  background-color: #EBEBD3;
 }
 
 .red {
