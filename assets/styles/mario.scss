@@ -1,3 +1,4 @@
+@import "colors";
 
 #mario {
     background-color: grey;
@@ -10,27 +11,27 @@
   }
   
   .white {
-    background-color: white;
+    background-color: $mariowhite;
   }
   
   .red {
-    background-color: red;
+    background-color: $mariored;
   }
   
   .brown {
-    background-color: rgb(92, 47, 47);
+    background-color: $mariobrown;
   }
   
   .black {
-    background-color: black;
+    background-color: $marioblack;
   }
   
   .yellow {
-    background-color: #fbac69;
+    background-color: $marioyellow;
   }
   
   .blue {
-    background-color: blue;
+    background-color: $marioblue;
   }
   
   #one_1_5 {
