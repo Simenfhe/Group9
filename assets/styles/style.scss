@@ -15,15 +15,17 @@ body {
 }
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: colu mn;
   align-items: center;
   justify-content: center;
 }
 
 .container {
   display: flex;
-  
 }
 
+section.intro{
+  background-color: $frame1color;
+}
 
 
