@@ -88,32 +88,6 @@
   }
 }
 
-body {
-  background-color: white;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .square {
   margin: 50px;
   background-color: blue;
@@ -121,10 +95,6 @@ main {
   height: 150px;
   -webkit-animation: none;
           animation: none;
-}
-
-div {
-  margin: 1%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -179,5 +149,35 @@ div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+body {
+  background-color: EBEBD3;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div {
+  margin: 1%;
 }
 /*# sourceMappingURL=style.css.map */
