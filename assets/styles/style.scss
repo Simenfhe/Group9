@@ -20,6 +20,7 @@
 #header_spaceinvader{
   width: 10%;
   height: auto;
+  justify-self: center;
 }
 
 body {
@@ -41,6 +42,11 @@ main {
 #mario{
   height: 200px;
   width: 200px;
+}
+
+.scene{
+  height: 100vh;
+  width: 100vw;
 }
 
 
