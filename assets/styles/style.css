@@ -609,6 +609,8 @@
 #header_spaceinvader {
   width: 10%;
   height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 body {
@@ -640,5 +642,10 @@ main {
 #mario {
   height: 200px;
   width: 200px;
+}
+
+.scene {
+  height: 100vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
