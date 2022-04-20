@@ -607,7 +607,7 @@
 }
 
 #header_spaceinvader {
-  width: 10%;
+  width: 150px;
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -640,8 +640,32 @@ main {
 }
 
 #mario {
-  height: 200px;
-  width: 200px;
+  height: 15vw;
+  width: 15vw;
+}
+
+#boxes {
+  height: 35vw;
+  width: 35vw;
+}
+
+#pole {
+  height: 45vw;
+  width: 15vw;
+}
+
+#flag {
+  height: 15vw;
+  width: 15vw;
+}
+
+#scene_mario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .scene {
