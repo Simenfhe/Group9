@@ -42,12 +42,26 @@ main {
   height: 100px;
 }
 
+#cloud1{
+  transform: translateX(200px);
+}
+
+#cloud2{
+  float: right;
+  transform: translateX(-300px) translateY(-70px);
+}
+
+
 
 
 
 #mario{
   height: 120px;
   width: 120px;
+  animation-name: mario_animation;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 #boxes{

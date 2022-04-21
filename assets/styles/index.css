@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@-webkit-keyframes mario_animation {
+  20% {
+    -webkit-transform: translateX(140px) translateY(-200px);
+            transform: translateX(140px) translateY(-200px);
+  }
+  30% {
+    -webkit-transform: translateX(270px) translateY(-55px);
+            transform: translateX(270px) translateY(-55px);
+  }
+  45% {
+    -webkit-transform: translateX(350px) translateY(-330px);
+            transform: translateX(350px) translateY(-330px);
+  }
+  60% {
+    -webkit-transform: translateX(500px) translateY(-225px);
+            transform: translateX(500px) translateY(-225px);
+  }
+  75% {
+    -webkit-transform: translateX(750px) translateY(-430px);
+            transform: translateX(750px) translateY(-430px);
+  }
+  90% {
+    -webkit-transform: translateX(900px) translateY(-300px);
+            transform: translateX(900px) translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(900px) translateY(-50px);
+            transform: translateX(900px) translateY(-50px);
+  }
+}
+@keyframes mario_animation {
+  20% {
+    -webkit-transform: translateX(140px) translateY(-200px);
+            transform: translateX(140px) translateY(-200px);
+  }
+  30% {
+    -webkit-transform: translateX(270px) translateY(-55px);
+            transform: translateX(270px) translateY(-55px);
+  }
+  45% {
+    -webkit-transform: translateX(350px) translateY(-330px);
+            transform: translateX(350px) translateY(-330px);
+  }
+  60% {
+    -webkit-transform: translateX(500px) translateY(-225px);
+            transform: translateX(500px) translateY(-225px);
+  }
+  75% {
+    -webkit-transform: translateX(750px) translateY(-430px);
+            transform: translateX(750px) translateY(-430px);
+  }
+  90% {
+    -webkit-transform: translateX(900px) translateY(-300px);
+            transform: translateX(900px) translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(900px) translateY(-50px);
+            transform: translateX(900px) translateY(-50px);
+  }
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
@@ -23,7 +84,6 @@
 }
 
 #mario {
-  background-color: grey;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[16];
@@ -648,9 +708,28 @@ main {
   height: 100px;
 }
 
+#cloud1 {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+#cloud2 {
+  float: right;
+  -webkit-transform: translateX(-300px) translateY(-70px);
+          transform: translateX(-300px) translateY(-70px);
+}
+
 #mario {
   height: 120px;
   width: 120px;
+  -webkit-animation-name: mario_animation;
+          animation-name: mario_animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 #boxes {
