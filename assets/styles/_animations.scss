@@ -1,0 +1,10 @@
+@keyframes mario_animation {
+    20%{transform: translateX(140px) translateY(-200px);}
+    30%{transform: translateX(270px) translateY(-55px);}
+    45%{transform: translateX(350px) translateY(-330px);}
+    60%{transform: translateX(500px) translateY(-225px);}
+    75%{transform: translateX(750px) translateY(-430px);}
+    90%{transform: translateX(900px) translateY(-300px);}
+    100%{transform: translateX(900px) translateY(-50px);}
+
+}
