@@ -33,20 +33,20 @@ main {
   
 }
 
-#clouds{
+#s_clouds{
   width: 100vw;
   height: 200px;
 }
 
-#clouds img{
+#s_clouds img{
   height: 100px;
 }
 
-#cloud1{
+#s_cloud1{
   transform: translateX(200px);
 }
 
-#cloud2{
+#s_cloud2{
   float: right;
   transform: translateX(-300px) translateY(-70px);
 }
@@ -55,7 +55,7 @@ main {
 
 
 
-#mario{
+#s_mario{
   height: 120px;
   width: 120px;
   animation-name: mario_animation;
@@ -64,32 +64,32 @@ main {
   animation-timing-function: linear;
 }
 
-#boxes{
+#s_boxes{
   height: 280px;
   width: 280px;
   transform: translateY(30px) translateX(200px);
 }
 
-#pole{
+#s_pole{
   height: 360px;
   width: 120px;
   transform: translateX(400px);
 }
 
-#flag{
+#s_flag{
   height: 110px;
   width: 110px;
   transform: translateY(-240px) translateX(570px);
 }
 
-#mario_wrap{
+#s_mario_wrap{
   display: flex;
   align-items:flex-end;
   height: 400px;
   width: 1000px;
 }
 
-#grass{
+#s_grass{
   display: block;
   width: 100vw;
   height: 150px;
