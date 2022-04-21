@@ -83,7 +83,7 @@
   }
 }
 
-#mario {
+#s_mario {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[16];
@@ -699,27 +699,27 @@ main {
   display: flex;
 }
 
-#clouds {
+#s_clouds {
   width: 100vw;
   height: 200px;
 }
 
-#clouds img {
+#s_clouds img {
   height: 100px;
 }
 
-#cloud1 {
+#s_cloud1 {
   -webkit-transform: translateX(200px);
           transform: translateX(200px);
 }
 
-#cloud2 {
+#s_cloud2 {
   float: right;
   -webkit-transform: translateX(-300px) translateY(-70px);
           transform: translateX(-300px) translateY(-70px);
 }
 
-#mario {
+#s_mario {
   height: 120px;
   width: 120px;
   -webkit-animation-name: mario_animation;
@@ -732,28 +732,28 @@ main {
           animation-timing-function: linear;
 }
 
-#boxes {
+#s_boxes {
   height: 280px;
   width: 280px;
   -webkit-transform: translateY(30px) translateX(200px);
           transform: translateY(30px) translateX(200px);
 }
 
-#pole {
+#s_pole {
   height: 360px;
   width: 120px;
   -webkit-transform: translateX(400px);
           transform: translateX(400px);
 }
 
-#flag {
+#s_flag {
   height: 110px;
   width: 110px;
   -webkit-transform: translateY(-240px) translateX(570px);
           transform: translateY(-240px) translateX(570px);
 }
 
-#mario_wrap {
+#s_mario_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,7 +764,7 @@ main {
   width: 1000px;
 }
 
-#grass {
+#s_grass {
   display: block;
   width: 100vw;
   height: 150px;
