@@ -33,34 +33,66 @@ main {
   
 }
 
+#clouds{
+  width: 100vw;
+  height: 200px;
+}
+
+#clouds img{
+  height: 100px;
+}
+
+
+
+
 #mario{
-  height: 15vw;
-  width: 15vw;
+  height: 120px;
+  width: 120px;
 }
 
 #boxes{
-  height: 35vw;
-  width: 35vw;
+  height: 280px;
+  width: 280px;
+  transform: translateY(30px) translateX(200px);
 }
 
 #pole{
-  height: 45vw;
-  width: 15vw;
+  height: 360px;
+  width: 120px;
+  transform: translateX(400px);
 }
 
 #flag{
-  height: 15vw;
-  width: 15vw;
+  height: 110px;
+  width: 110px;
+  transform: translateY(-240px) translateX(570px);
 }
 
-#scene_mario{
+#mario_wrap{
   display: flex;
-  align-items:center;
+  align-items:flex-end;
+  height: 400px;
+  width: 1000px;
 }
 
+#grass{
+  display: block;
+  width: 100vw;
+  height: 150px;
+  background-color: green;
+}
+
+#simen_scene_2{
+  background: linear-gradient(green, brown);
+}
+
+#simen_scene_3{
+  background: linear-gradient(brown,grey);
+}
 .scene{
   height: 100vh;
   width: 100vw;
+  display: block;
 }
 
 
