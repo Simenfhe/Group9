@@ -607,7 +607,7 @@
 }
 
 #header_spaceinvader {
-  width: 10%;
+  width: 150px;
   height: auto;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -639,13 +639,72 @@ main {
   display: flex;
 }
 
-#mario {
+#clouds {
+  width: 100vw;
   height: 200px;
-  width: 200px;
+}
+
+#clouds img {
+  height: 100px;
+}
+
+#mario {
+  height: 120px;
+  width: 120px;
+}
+
+#boxes {
+  height: 280px;
+  width: 280px;
+  -webkit-transform: translateY(30px) translateX(200px);
+          transform: translateY(30px) translateX(200px);
+}
+
+#pole {
+  height: 360px;
+  width: 120px;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
+}
+
+#flag {
+  height: 110px;
+  width: 110px;
+  -webkit-transform: translateY(-240px) translateX(570px);
+          transform: translateY(-240px) translateX(570px);
+}
+
+#mario_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 400px;
+  width: 1000px;
+}
+
+#grass {
+  display: block;
+  width: 100vw;
+  height: 150px;
+  background-color: green;
+}
+
+#simen_scene_2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(green), to(brown));
+  background: linear-gradient(green, brown);
+}
+
+#simen_scene_3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(brown), to(grey));
+  background: linear-gradient(brown, grey);
 }
 
 .scene {
   height: 100vh;
   width: 100vw;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
