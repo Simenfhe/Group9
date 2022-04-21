@@ -1,0 +1,85 @@
+@import "colors";
+@import "animations";
+@import "fonts";
+@import "media-queries";
+@import "mario";
+@import "style";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+body {
+  background-color: $backgroundcolor;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main,
+section,
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.n-s1-text-top-left {
+}
+
+.n-s1-text-top-right {
+}
+
+.n-s1-lbox {
+  background-color: $n-boxcolor1;
+  width: 20vw;
+  height: 75vh;
+}
+
+.n-s1-1box h2 {
+}
+
+.n-s1-rbox {
+  background-color: $frame1color;
+  width: 75vw;
+  height: 75vh;
+}
+
+.n-s1-topbox-container {
+  padding-left: 2%;
+  padding-top: 2%;
+  flex-direction: row;
+}
+
+.n-s1-topbox {
+  width: 6vw;
+  margin-left: 5%;
+  background-color: $n-boxcolor1;
+}
+
+.n-s1-topbox-5 {
+  margin-left: 25%;
+}
+
+.n-s1-topbox p {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.n-s1-lowerbox-container {
+  flex-direction: row;
+  background-color: $n-boxcolor1;
+  margin: 5%;
+  width: 68vw;
+  height: 40vh;
+}
+
+.n-s1-lowerbox-left {
+  max-height: 20%;
+}
+
+.n-s1-lowerbox-right {
+  margin: 2%;
+  background-color: $n-boxcolor2;
+  width: 20vw;
+  height: 20vh;
+}
