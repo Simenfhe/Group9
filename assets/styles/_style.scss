@@ -60,7 +60,7 @@ main {
   width: 120px;
   animation-name: mario_animation;
   animation-duration: 5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 0;
   animation-timing-function: linear;
 }
 
@@ -93,15 +93,34 @@ main {
   display: block;
   width: 100vw;
   height: 150px;
-  background-color: green;
+  background-color: $groundgreen;
+}
+
+#s_resetbtn{
+  display: block;
+  background-color: $backgroundcolor;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transform: translateY(-100px);
+  margin: 0 auto;
 }
 
 #simen_scene_2{
-  background: linear-gradient(green, brown);
+  background: linear-gradient( #29d400 0%, rgb(126, 96, 0) 28%);
 }
 
 #simen_scene_3{
-  background: linear-gradient(brown,grey);
+  background: linear-gradient(rgb(126, 96, 0),rgb(72, 75, 79) 35%);
+}
+
+#s_bonfire{
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  bottom: -50%;
 }
 .scene{
   height: 100vh;
