@@ -1,30 +1,28 @@
-@import "colors";
-@import "animations";
-@import "fonts";
-@import "media-queries";
-//@import "mario";
-//@import "style";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 
 // Standard stuff
-body {
+article {
   background-color: $backgroundcolor;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-p{
+article p{
   text-align:center;
 }
 
-main,
-section,
-div {
+article section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
 }
 
+article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
 .row {
   flex-direction: row;
 }
@@ -113,8 +111,9 @@ div {
   height:97px;
 }
 
-.n-s2-wheel-inner{
+.n-s2-wheel-inside{
   background-color:$n-boxcolor1;
+  border-radius:100%;
   width:48.5px;
   height:48.5px;
 }
@@ -159,7 +158,10 @@ div {
 }
 
 .n-pad{
-
+  margin:5%;
+  background-color:pink;
+  width:100px;
+  height:100px;
 }
 
 .s3-container{
