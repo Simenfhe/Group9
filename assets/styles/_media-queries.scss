@@ -1,11 +1,24 @@
 // Run animation for those who have no preference in reducing motion
 
 @media (prefers-reduced-motion: no-preference) {
+  @keyframes n-pad-animation-movement{
+    // animation goes here for the pad movement
+  }
+
   }
   
   // Dark  color scheme preferences
   
   @media (prefers-color-scheme: dark) {
+    // Darker pad color preference
+    $n-mcolor1:#977a4e;
+    $n-mcolor2:#589e3e;
+    $n-mcolor3:#327881;
+    $n-mcolor4:#833185;
+    $n-mcolor5:#6b3531;
+    $n-mcolor6:#777936;
+    $n-mcolor7:#286645;
+    $n-mcolor8:#442661;
   }
   
   // Change flex direction based on orientation
