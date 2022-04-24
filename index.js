@@ -55,3 +55,34 @@ function resetAnimationSimen(){
     window.location.reload()
 }
 
+const dObject1 = document.querySelector(".d-cardBox");
+const dObject2 = document.querySelector(".d-mobileCards");
+const dObject3 = document.querySelector(".d-pcMacCards");
+
+const dObserver1 = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            dObject1.classList.add("d-cardAnimation");
+        }
+    });
+});
+
+const dObserver2 = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            dObject2.classList.add("d-cardAnimation");
+        }
+    });
+});
+
+const dObserver3 = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            dObject3.classList.add("d-cardAnimation");
+        }
+    });
+});
+
+dObserver1.observe(dObject1);
+dObserver2.observe(dObject2);
+dObserver3.observe(dObject3);
