@@ -368,6 +368,10 @@
     -webkit-animation-duration: 60s;
             animation-duration: 60s;
   }
+  .n-pad-container-anim #maraka_1, .n-pad-container-anim #maraka_2, .n-pad-container-anim #fog1, .n-pad-container-anim #fog2, .n-pad-container-anim #fog3, .n-pad-container-anim #mario, .n-pad-container-anim .d-cardAnimation, .n-pad-container-anim #s_mario, .n-s2-knob-container-anim #maraka_1, .n-s2-knob-container-anim #maraka_2, .n-s2-knob-container-anim #fog1, .n-s2-knob-container-anim #fog2, .n-s2-knob-container-anim #fog3, .n-s2-knob-container-anim #mario, .n-s2-knob-container-anim .d-cardAnimation, .n-s2-knob-container-anim #s_mario {
+    -webkit-animation-iteration-count: 0;
+            animation-iteration-count: 0;
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -965,10 +969,11 @@
 
 #header {
   width: 100vw;
-  height: 30vh;
+  height: 300px;
   background-color: #517664;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 5vh;
 }
 
 #header_spaceinvader {
@@ -1009,7 +1014,7 @@ p, h1, h2, h3, h4, h5 {
 #note_1 {
   position: absolute;
   right: 310px;
-  top: 231px;
+  top: 151px;
 }
 
 #note_2 {
