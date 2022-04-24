@@ -34,3 +34,8 @@
     80%{opacity: 0.35; right: 50%;}
     90%{opacity: 0.1; right: 100%;}
 }
+}
+
+@keyframes n-anim-movement{
+    100%{transform: translatey(500px);}
+    }
