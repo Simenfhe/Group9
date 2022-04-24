@@ -43,7 +43,6 @@ const observer = new IntersectionObserver(function(entries, observer){
         console.log(entry.target)
         let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
-            console.log("funk")
             section.classList.toggle("s_animjs")
         }
 })
