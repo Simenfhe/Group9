@@ -9,6 +9,6 @@
 
 }
 
-@keyframes n-pad-animation-color{
-    // animation goes here for the pad color change
-  }
+@keyframes n-anim-movement{
+    100%{transform: translatey(500px);}
+    }

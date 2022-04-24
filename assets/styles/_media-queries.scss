@@ -1,11 +1,17 @@
-// Run animation for those who have no preference in reducing motion
-
 @media (prefers-reduced-motion: no-preference) {
-  @keyframes n-pad-animation-movement{
-    // animation goes here for the pad movement
+    .n-pad-container-anim,.n-s2-knob-container-anim{
+      animation-duration:30s;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .n-pad-container-anim,.n-s2-knob-container-anim{
+    animation-duration:60s;
   }
 
-  }
+  
+}
   
   // Dark  color scheme preferences
   
