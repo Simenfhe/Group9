@@ -231,6 +231,11 @@
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 }
 
+@font-face {
+  font-family: OptimusPrincepsSemiBold;
+  src: url(/assets/fonts/OptimusPrincepsSemiBold.ttf);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .n-pad-container-anim, .n-s2-knob-container-anim {
     -webkit-animation-duration: 30s;
@@ -873,6 +878,10 @@ main {
           justify-content: center;
 }
 
+p, h1, h2, h3, h4, h5 {
+  font-family: roboto,sans-serif;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1048,10 +1057,59 @@ main {
   height: 100vh;
 }
 
+#simen_scene_2_wrap {
+  height: 94vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
 #s_scene_2_header {
   margin: 0;
-  font-family: roboto,sans-serif;
   font-size: 5vh;
+}
+
+#simen_scene_2_wrap > p {
+  font-size: 2vh;
+  width: 35vw;
+  margin: 3vw;
+  display: inline-block;
+  border: 5px #bbbb6a solid;
+  background-color: #EBEBD3;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.s_scene_2_player {
+  width: 35vw;
+  display: inline-block;
+  border: 5px #bbbb6a solid;
+  background-color: #EBEBD3;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+}
+
+.control {
+  margin: 1rem auto;
+  width: 25vw;
+  display: block;
+}
+
+#end {
+  font-size: 10vh;
+  color: #fbfcfa;
+  text-shadow: 2px 2px 8px black, -2px 2px 8px black, 0 2px 8px black, 0 -2px 0 black;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  font-family: OptimusPrincepsSemiBold, Roboto, sans-serif;
 }
 
 article {

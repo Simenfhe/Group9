@@ -27,6 +27,10 @@ main {
   justify-content: center;
 }
 
+p,h1,h2,h3,h4,h5{
+  font-family: roboto,sans-serif;
+}
+
 .container {
   display: flex;
   
@@ -178,10 +182,55 @@ animation-name: fog3;
   height: 100vh;
 }
 
+#simen_scene_2_wrap{
+  height: 94vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
 #s_scene_2_header{
   margin: 0;
-  font-family: roboto,sans-serif;
   font-size: 5vh;
 }
 
+#simen_scene_2_wrap > p{
+  font-size: 2vh;
+  width: 35vw;
+  margin: 3vw;
+  display: inline-block;
+  border: 5px darken($backgroundcolor, 30%) solid;
+  background-color: $backgroundcolor;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+  text-align: center;
+}
 
+
+.s_scene_2_player{
+  width: 35vw;
+  display: inline-block;
+  border: 5px darken($backgroundcolor, 30%) solid;
+  background-color: $backgroundcolor;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+
+}
+
+.control{
+  margin: 1rem auto;
+  width: 25vw;
+  display: block;
+}
+
+#end{
+  font-size: 10vh;
+  color: #fbfcfa;
+  text-shadow: 2px 2px 8px $textshadow, -2px 2px 8px $textshadow, 0 2px 8px $textshadow, 0 -2px 0 $textshadow;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  font-family:OptimusPrincepsSemiBold, Roboto, sans-serif;
+}
