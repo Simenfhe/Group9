@@ -21,12 +21,12 @@
             transform: translateX(750px) translateY(-430px);
   }
   90% {
-    -webkit-transform: translateX(900px) translateY(-300px);
-            transform: translateX(900px) translateY(-300px);
+    -webkit-transform: translateX(850px) translateY(-300px);
+            transform: translateX(850px) translateY(-300px);
   }
   100% {
-    -webkit-transform: translateX(900px) translateY(-50px);
-            transform: translateX(900px) translateY(-50px);
+    -webkit-transform: translateX(850px) translateY(-50px);
+            transform: translateX(850px) translateY(-50px);
   }
 }
 @keyframes mario_animation {
@@ -51,12 +51,162 @@
             transform: translateX(750px) translateY(-430px);
   }
   90% {
-    -webkit-transform: translateX(900px) translateY(-300px);
-            transform: translateX(900px) translateY(-300px);
+    -webkit-transform: translateX(850px) translateY(-300px);
+            transform: translateX(850px) translateY(-300px);
   }
   100% {
-    -webkit-transform: translateX(900px) translateY(-50px);
-            transform: translateX(900px) translateY(-50px);
+    -webkit-transform: translateX(850px) translateY(-50px);
+            transform: translateX(850px) translateY(-50px);
+  }
+}
+
+@-webkit-keyframes fog1 {
+  10% {
+    opacity: 0.1;
+    left: -40%;
+  }
+  20% {
+    opacity: 0.25;
+    left: -20%;
+  }
+  40% {
+    opacity: 0.35;
+    left: -10%;
+  }
+  60% {
+    opacity: 0.2;
+    left: 20%;
+  }
+  80% {
+    opacity: 0.3;
+    left: 60%;
+  }
+  90% {
+    opacity: 0.1;
+    left: 100%;
+  }
+}
+
+@keyframes fog1 {
+  10% {
+    opacity: 0.1;
+    left: -40%;
+  }
+  20% {
+    opacity: 0.25;
+    left: -20%;
+  }
+  40% {
+    opacity: 0.35;
+    left: -10%;
+  }
+  60% {
+    opacity: 0.2;
+    left: 20%;
+  }
+  80% {
+    opacity: 0.3;
+    left: 60%;
+  }
+  90% {
+    opacity: 0.1;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes fog2 {
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes fog2 {
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes fog3 {
+  10% {
+    opacity: 0.1;
+    right: -40%;
+  }
+  20% {
+    opacity: 0.3;
+    right: -20%;
+  }
+  40% {
+    opacity: 0.2;
+    right: 0%;
+  }
+  60% {
+    opacity: 0.25;
+    right: 40%;
+  }
+  80% {
+    opacity: 0.35;
+    right: 50%;
+  }
+  90% {
+    opacity: 0.1;
+    right: 100%;
+  }
+}
+
+@keyframes fog3 {
+  10% {
+    opacity: 0.1;
+    right: -40%;
+  }
+  20% {
+    opacity: 0.3;
+    right: -20%;
+  }
+  40% {
+    opacity: 0.2;
+    right: 0%;
+  }
+  60% {
+    opacity: 0.25;
+    right: 40%;
+  }
+  80% {
+    opacity: 0.35;
+    right: 50%;
+  }
+  90% {
+    opacity: 0.1;
+    right: 100%;
   }
 }
 
@@ -742,15 +892,15 @@ main {
 #s_pole {
   height: 360px;
   width: 120px;
-  -webkit-transform: translateX(400px);
-          transform: translateX(400px);
+  -webkit-transform: translateX(320px);
+          transform: translateX(320px);
 }
 
 #s_flag {
   height: 110px;
   width: 110px;
-  -webkit-transform: translateY(-240px) translateX(570px);
-          transform: translateY(-240px) translateX(570px);
+  -webkit-transform: translateY(-240px) translateX(490px);
+          transform: translateY(-240px) translateX(490px);
 }
 
 #s_mario_wrap {
@@ -762,6 +912,7 @@ main {
           align-items: flex-end;
   height: 400px;
   width: 1000px;
+  max-width: 100vw;
 }
 
 #s_grass {
@@ -790,15 +941,68 @@ main {
 #simen_scene_3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#7e6000), color-stop(35%, #484b4f));
   background: linear-gradient(#7e6000, #484b4f 35%);
+  position: relative;
 }
 
 #s_bonfire {
   display: block;
-  width: 200px;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  bottom: -50%;
+  width: auto;
+  height: 300px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  bottom: 50px;
+}
+
+#s_fogwrap {
+  width: 100vw;
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#fog1 {
+  left: -100%;
+  -webkit-animation-name: fog1;
+          animation-name: fog1;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#fog2 {
+  right: 0%;
+  -webkit-animation-name: fog2;
+          animation-name: fog2;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#fog3 {
+  right: -50%;
+  -webkit-animation-name: fog3;
+          animation-name: fog3;
+  -webkit-animation-duration: 150s;
+          animation-duration: 150s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.s_fog {
+  overflow: hidden;
+  height: 350px;
+  width: 100vw;
+  position: absolute;
 }
 
 .scene {
