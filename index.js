@@ -35,7 +35,7 @@ nObserver.observe(nPadContainer);
 const section = document.querySelector('#s_mario');
 
 const options = {
-    threshold:.5
+    threshold:.99
 };
 
 const observer = new IntersectionObserver(function(entries, observer){
@@ -43,8 +43,8 @@ const observer = new IntersectionObserver(function(entries, observer){
         console.log(entry.target)
         let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
-            document.classlist.add("s_animjs")
-            section.log("funker")
+            console.log("funk")
+            section.classList.toggle("s_animjs")
         }
 })
 } ,options);

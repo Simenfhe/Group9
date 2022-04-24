@@ -1168,6 +1168,9 @@ p, h1, h2, h3, h4, h5 {
 #s_mario {
   height: 120px;
   width: 120px;
+}
+
+.s_animjs {
   -webkit-animation-name: mario_animation;
           animation-name: mario_animation;
   -webkit-animation-duration: 5s;
@@ -1176,9 +1179,6 @@ p, h1, h2, h3, h4, h5 {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-#s_animjs {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
