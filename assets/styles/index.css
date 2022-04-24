@@ -1028,12 +1028,15 @@ p, h1, h2, h3, h4, h5 {
           animation-name: mario_animation;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-iteration-count: 0;
-          animation-iteration-count: 0;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#s_animjs {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 #s_boxes {
@@ -1136,12 +1139,16 @@ p, h1, h2, h3, h4, h5 {
           animation-name: fog1;
   -webkit-animation-duration: 300s;
           animation-duration: 300s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #fog2 {
   right: 0%;
   -webkit-animation-name: fog2;
           animation-name: fog2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-animation-duration: 60s;
           animation-duration: 60s;
 }
@@ -1152,6 +1159,8 @@ p, h1, h2, h3, h4, h5 {
           animation-name: fog3;
   -webkit-animation-duration: 150s;
           animation-duration: 150s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .s_fog {
