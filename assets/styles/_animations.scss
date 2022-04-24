@@ -4,9 +4,36 @@
     45%{transform: translateX(350px) translateY(-330px);}
     60%{transform: translateX(500px) translateY(-225px);}
     75%{transform: translateX(750px) translateY(-430px);}
-    90%{transform: translateX(900px) translateY(-300px);}
-    100%{transform: translateX(900px) translateY(-50px);}
+    90%{transform: translateX(850px) translateY(-300px);}
+    100%{transform: translateX(850px) translateY(-50px);}
+}
 
+@keyframes fog1 {
+    10%{opacity: 0.1; left: -40%;}
+    20%{opacity: 0.25; left: -20%;}
+    40%{opacity: 0.35; left: -10%;}
+    60%{opacity: 0.2; left: 20%;}
+    80%{opacity: 0.3; left: 60%;}
+    90%{opacity: 0.1; left: 100%;}
+}
+
+@keyframes fog2 {
+    10%{opacity: 0.1;}
+    20%{opacity: 0.3;}
+    40%{opacity: 0.2;}
+    60%{opacity: 0.25;}
+    80%{opacity: 0.2;}
+    90%{opacity: 0.1;}  
+}
+
+@keyframes fog3 {
+    10%{opacity: 0.1; right: -40%;}
+    20%{opacity: 0.3;right: -20%;}
+    40%{opacity: 0.2; right: 0%;}
+    60%{opacity: 0.25; right: 40%;}
+    80%{opacity: 0.35; right: 50%;}
+    90%{opacity: 0.1; right: 100%;}
+}
 }
 
 @keyframes n-anim-movement{

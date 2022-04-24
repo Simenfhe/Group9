@@ -69,13 +69,13 @@ main {
 #s_pole{
   height: 360px;
   width: 120px;
-  transform: translateX(400px);
+  transform: translateX(320px);
 }
 
 #s_flag{
   height: 110px;
   width: 110px;
-  transform: translateY(-240px) translateX(570px);
+  transform: translateY(-240px) translateX(490px);
 }
 
 #s_mario_wrap{
@@ -83,6 +83,7 @@ main {
   align-items:flex-end;
   height: 400px;
   width: 1000px;
+  max-width: 100vw;
 }
 
 #s_grass{
@@ -108,16 +109,60 @@ main {
 
 #simen_scene_3{
   background: linear-gradient(rgb(126, 96, 0),rgb(72, 75, 79) 35%);
+  position: relative;
 }
 
 #s_bonfire{
   display: block;
-  width: 200px;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  bottom: -50%;
+  width: auto;
+  height: 300px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  bottom: 50px;
 }
+
+#s_fogwrap{
+  width: 100vw;
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+
+
+#fog1{
+left: -100%;
+animation-name: fog1;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#fog2{
+  right: 0%;
+  animation-name: fog2;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#fog3{
+right: -50%;
+animation-name: fog3;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.s_fog{
+  overflow: hidden;
+  height: 350px;
+  width: 100vw;
+  position: absolute;
+}
+
 .scene{
   margin-top:10%;
   width: 100vw;

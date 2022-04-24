@@ -34,6 +34,7 @@ nObserver.observe(nPadContainer);
 
 
 const section = document.querySelector('#s_mario');
+const section2 = document.querySelector('#s_fogwrap');
 
 const options = {
     threshold:.5
@@ -41,6 +42,7 @@ const options = {
 
 const observer = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry => {
+        console.log(entry.target)
         let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
             console.log("if")
@@ -54,6 +56,7 @@ const observer = new IntersectionObserver(function(entries, observer){
 } ,options);
 
 observer.observe(section)
+observer.observe(section2)
 
 function resetAnimationSimen(){
     window.location.reload()
