@@ -952,6 +952,8 @@ main {
   width: 100vw;
   height: 150px;
   background-color: #29d400;
+  padding-bottom: 999px;
+  margin-bottom: -999px;
 }
 
 #s_resetbtn {
@@ -963,6 +965,10 @@ main {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
   margin: 0 auto;
+}
+
+#scene_mario {
+  overflow: hidden;
 }
 
 #simen_scene_2 {
@@ -1037,10 +1043,13 @@ main {
   position: absolute;
 }
 
-.scene {
-  margin-top: 10%;
+.scene, .s_scene {
   width: 100vw;
   display: block;
+}
+
+.s_scene {
+  height: 100vh;
 }
 
 article {

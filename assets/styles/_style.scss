@@ -91,6 +91,8 @@ main {
   width: 100vw;
   height: 150px;
   background-color: $groundgreen;
+  padding-bottom: 999px;
+  margin-bottom: -999px;
 }
 
 #s_resetbtn{
@@ -103,9 +105,15 @@ main {
   margin: 0 auto;
 }
 
+#scene_mario{
+  overflow: hidden;
+}
+
 #simen_scene_2{
   background: linear-gradient( #29d400 0%, rgb(126, 96, 0) 28%);
 }
+
+
 
 #simen_scene_3{
   background: linear-gradient(rgb(126, 96, 0),rgb(72, 75, 79) 35%);
@@ -163,10 +171,13 @@ animation-name: fog3;
   position: absolute;
 }
 
-.scene{
-  margin-top:10%;
+.scene, .s_scene{
   width: 100vw;
   display: block;
+}
+
+.s_scene{
+  height: 100vh;
 }
 
 
