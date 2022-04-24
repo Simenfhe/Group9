@@ -68,12 +68,7 @@ max-width: 80%;
   max-width: 450px;
 }
 
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-abletonBox,
-.d-flBox,
-.d-logicBox {
+.d-iconBox {
   max-width: 300px;
 }
 
@@ -90,16 +85,13 @@ justify-content: space-between;
 
 .d-pcBox,
 .d-mobileBox,
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-flBox,
-.d-abletonBox,
-.d-logicBox {
+.d-iconBox {
 background-color: #b4adea;
 border-radius: 10px;
 box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
 padding: 50px 0 50px 0;
+display: grid;
+align-items: center;
 }
 
 .d-cardAnimation {
