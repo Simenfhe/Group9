@@ -32,7 +32,6 @@ const nObserver = new IntersectionObserver(function(entries, observer){
 
 nObserver.observe(nPadContainer);
 
-
 const section = document.querySelector('#s_mario');
 
 const options = {
