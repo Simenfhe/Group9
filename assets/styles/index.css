@@ -252,6 +252,100 @@
   }
 }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
@@ -271,8 +365,12 @@
 
 @media (prefers-reduced-motion: reduce) {
   .n-pad-container-anim, .n-s2-knob-container-anim {
-    -webkit-animation-duration: 60s;
-            animation-duration: 60s;
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+  }
+  .n-pad-container-anim #maraka_1, .n-pad-container-anim #maraka_2, .n-pad-container-anim #fog1, .n-pad-container-anim #fog2, .n-pad-container-anim #fog3, .n-pad-container-anim #mario, .n-pad-container-anim .d-cardAnimation, .n-pad-container-anim #s_mario, .n-s2-knob-container-anim #maraka_1, .n-s2-knob-container-anim #maraka_2, .n-s2-knob-container-anim #fog1, .n-s2-knob-container-anim #fog2, .n-s2-knob-container-anim #fog3, .n-s2-knob-container-anim #mario, .n-s2-knob-container-anim .d-cardAnimation, .n-s2-knob-container-anim #s_mario {
+    -webkit-animation-iteration-count: 0;
+            animation-iteration-count: 0;
   }
 }
 
@@ -871,10 +969,11 @@
 
 #header {
   width: 100vw;
-  height: 30vh;
+  height: 300px;
   background-color: #517664;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 5vh;
 }
 
 #header_spaceinvader {
@@ -909,13 +1008,63 @@ main {
 }
 
 p, h1, h2, h3, h4, h5 {
-  font-family: roboto,sans-serif;
+  font-family: "Roboto",sans-serif;
+}
+
+#note_1 {
+  position: absolute;
+  right: 310px;
+  top: 151px;
+}
+
+#note_2 {
+  position: absolute;
+  left: 243px;
+  top: 200px;
+}
+
+#marak_1 {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+#marak_2 {
+  position: absolute;
+  left: 152px;
+  top: 30px;
+}
+
+#marak_1, #marak_2 {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#header-top {
+  font-size: 2em;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .d-h2 {
@@ -1011,6 +1160,9 @@ p, h1, h2, h3, h4, h5 {
 #s_mario {
   height: 120px;
   width: 120px;
+}
+
+.s_animjs {
   -webkit-animation-name: mario_animation;
           animation-name: mario_animation;
   -webkit-animation-duration: 5s;
@@ -1019,9 +1171,6 @@ p, h1, h2, h3, h4, h5 {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-#s_animjs {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -1310,10 +1459,21 @@ article div {
 }
 
 .n-s1-topbox {
+  border-radius: 45%;
   width: 7vw;
   margin-left: 5px;
   margin-right: 5px;
   background-color: #C4C4C4;
+}
+
+article a {
+  color: darkmagenta;
+  text-decoration: none;
+}
+
+article a:hover {
+  color: magenta;
+  text-decoration: none;
 }
 
 .n-s1-topbox p {

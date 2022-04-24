@@ -32,11 +32,10 @@ const nObserver = new IntersectionObserver(function(entries, observer){
 
 nObserver.observe(nPadContainer);
 
-
 const section = document.querySelector('#s_mario');
 
 const options = {
-    threshold:.5
+    threshold:.99
 };
 
 const observer = new IntersectionObserver(function(entries, observer){
@@ -44,8 +43,7 @@ const observer = new IntersectionObserver(function(entries, observer){
         console.log(entry.target)
         let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
-            document.classlist.add("s_animjs")
-            section.log("funker")
+            section.classList.toggle("s_animjs")
         }
 })
 } ,options);
@@ -56,17 +54,35 @@ function resetAnimationSimen(){
     window.location.reload()
 }
 
-const dAnimation = document.querySelector('.d-cardAnimation')
 
-const dObserver = new IntersectionObserver(function(entries, observer){
+const dObject1 = document.querySelector(".d-cardBox");
+const dObject2 = document.querySelector(".d-mobileCards");
+const dObject3 = document.querySelector(".d-pcMacCards");
+
+const dObserver1 = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry => {
-        console.log(entry.target)
-        let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
-            document.classlist.add("d-cardAnimation")
-            section.log("test")
+            dObject1.classList.add("d-cardAnimation");
         }
-})
-} ,options);
+    });
+});
 
-dObserver.observe(dAnimation)
+const dObserver2 = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            dObject2.classList.add("d-cardAnimation");
+        }
+    });
+});
+
+const dObserver3 = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            dObject3.classList.add("d-cardAnimation");
+        }
+    });
+});
+
+dObserver1.observe(dObject1);
+dObserver2.observe(dObject2);
+dObserver3.observe(dObject3);

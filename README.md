@@ -2,9 +2,7 @@
 
 ## What the project is about
 
-This project will teach music production in a way that is centered around music in videogames. We will go over a few different techniques and some software, we will also show a few examples of how music is produced, and then used in videogames.
-
-This project will have 10 scenes about learning how to get into it.
+This project will teach simple music production in a way that is centered around music in videogames. We will go over a few different techniques and some software, we will also show a few examples of how music is produced, and then used in videogames.
 
 ## Why it is useful
 
