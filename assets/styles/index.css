@@ -889,14 +889,14 @@ main {
 }
 
 #s_cloud1 {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
+  -webkit-transform: translateX(200px) translateY(70px);
+          transform: translateX(200px) translateY(70px);
 }
 
 #s_cloud2 {
   float: right;
-  -webkit-transform: translateX(-300px) translateY(-70px);
-          transform: translateX(-300px) translateY(-70px);
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
 }
 
 #s_mario {

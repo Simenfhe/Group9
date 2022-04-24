@@ -42,12 +42,12 @@ main {
 }
 
 #s_cloud1{
-  transform: translateX(200px);
+  transform: translateX(200px) translateY(70px);
 }
 
 #s_cloud2{
   float: right;
-  transform: translateX(-300px) translateY(-70px);
+  transform: translateX(-300px);
 }
 
 #s_mario{
