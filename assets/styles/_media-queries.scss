@@ -8,6 +8,9 @@
 @media (prefers-reduced-motion: reduce) {
   .n-pad-container-anim,.n-s2-knob-container-anim{
     animation-duration:0s;
+  #maraka_1,#maraka_2,#fog1,#fog2,#fog3,#mario,.d-cardAnimation,#s_mario{
+    animation-iteration-count: 0;
+  }
   }
 
   

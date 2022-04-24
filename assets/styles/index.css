@@ -252,6 +252,100 @@
   }
 }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
@@ -273,6 +367,10 @@
   .n-pad-container-anim, .n-s2-knob-container-anim {
     -webkit-animation-duration: 0s;
             animation-duration: 0s;
+  }
+  .n-pad-container-anim #maraka_1, .n-pad-container-anim #maraka_2, .n-pad-container-anim #fog1, .n-pad-container-anim #fog2, .n-pad-container-anim #fog3, .n-pad-container-anim #mario, .n-pad-container-anim .d-cardAnimation, .n-pad-container-anim #s_mario, .n-s2-knob-container-anim #maraka_1, .n-s2-knob-container-anim #maraka_2, .n-s2-knob-container-anim #fog1, .n-s2-knob-container-anim #fog2, .n-s2-knob-container-anim #fog3, .n-s2-knob-container-anim #mario, .n-s2-knob-container-anim .d-cardAnimation, .n-s2-knob-container-anim #s_mario {
+    -webkit-animation-iteration-count: 0;
+            animation-iteration-count: 0;
   }
 }
 
@@ -871,10 +969,11 @@
 
 #header {
   width: 100vw;
-  height: 30vh;
+  height: 300px;
   background-color: #517664;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 5vh;
 }
 
 #header_spaceinvader {
@@ -910,6 +1009,39 @@ main {
 
 p, h1, h2, h3, h4, h5 {
   font-family: "Roboto",sans-serif;
+}
+
+#note_1 {
+  position: absolute;
+  right: 310px;
+  top: 151px;
+}
+
+#note_2 {
+  position: absolute;
+  left: 243px;
+  top: 200px;
+}
+
+#marak_1 {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+#marak_2 {
+  position: absolute;
+  left: 152px;
+  top: 30px;
+}
+
+#marak_1, #marak_2 {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .container {
@@ -963,12 +1095,7 @@ p, h1, h2, h3, h4, h5 {
   max-width: 450px;
 }
 
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-abletonBox,
-.d-flBox,
-.d-logicBox {
+.d-iconBox {
   max-width: 300px;
 }
 
@@ -992,17 +1119,17 @@ p, h1, h2, h3, h4, h5 {
 
 .d-pcBox,
 .d-mobileBox,
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-flBox,
-.d-abletonBox,
-.d-logicBox {
+.d-iconBox {
   background-color: #b4adea;
   border-radius: 10px;
   -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
   padding: 50px 0 50px 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .d-cardAnimation {
@@ -1045,12 +1172,15 @@ p, h1, h2, h3, h4, h5 {
           animation-name: mario_animation;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-iteration-count: 0;
-          animation-iteration-count: 0;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#s_animjs {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 #s_boxes {
@@ -1153,12 +1283,16 @@ p, h1, h2, h3, h4, h5 {
           animation-name: fog1;
   -webkit-animation-duration: 300s;
           animation-duration: 300s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #fog2 {
   right: 0%;
   -webkit-animation-name: fog2;
           animation-name: fog2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-animation-duration: 60s;
           animation-duration: 60s;
 }
@@ -1169,6 +1303,8 @@ p, h1, h2, h3, h4, h5 {
           animation-name: fog3;
   -webkit-animation-duration: 150s;
           animation-duration: 150s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .s_fog {

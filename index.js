@@ -43,8 +43,8 @@ const observer = new IntersectionObserver(function(entries, observer){
         console.log(entry.target)
         let sCheck = console.log(entry.isIntersecting)
         if(entry.isIntersecting){
-            section.style.animationDelay ="2s"
-            section.style.animationIterationCount = "1"
+            document.classlist.add("s_animjs")
+            section.log("funker")
         }
 })
 } ,options);

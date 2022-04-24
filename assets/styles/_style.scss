@@ -6,9 +6,10 @@
 
 #header{
   width: 100vw;
-  height: 30vh;
+  height: 300px;
   background-color: $frame1color;
   display: grid;
+  margin-bottom:5vh ;
 }
 
 #header_spaceinvader{
@@ -33,6 +34,37 @@ main {
 
 p,h1,h2,h3,h4,h5{
   font-family: "Roboto",sans-serif;
+}
+
+#note_1{
+  position: absolute;
+  right: 310px;
+  top: 151px;
+}
+
+#note_2{
+  position: absolute;
+  left: 243px;
+  top: 200px;
+}
+
+#marak_1{
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+#marak_2{
+  position: absolute;
+  left: 152px;
+  top: 30px;
+}
+
+#marak_1, #marak_2{
+  animation-name: shake;
+  animation-duration: .5s;
+  animation-iteration-count: infinite
+  ;
 }
 
 .container {
@@ -77,12 +109,7 @@ max-width: 80%;
   max-width: 450px;
 }
 
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-abletonBox,
-.d-flBox,
-.d-logicBox {
+.d-iconBox {
   max-width: 300px;
 }
 
@@ -99,16 +126,13 @@ justify-content: space-between;
 
 .d-pcBox,
 .d-mobileBox,
-.d-flMobileBox,
-.d-gbandBox,
-.d-cubasisBox,
-.d-flBox,
-.d-abletonBox,
-.d-logicBox {
+.d-iconBox {
 background-color: #b4adea;
 border-radius: 10px;
 box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
 padding: 50px 0 50px 0;
+display: grid;
+align-items: center;
 }
 
 .d-cardAnimation {
@@ -143,9 +167,12 @@ padding: 50px 0 50px 0;
   width: 120px;
   animation-name: mario_animation;
   animation-duration: 5s;
-  animation-iteration-count: 0;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+}
+
+#s_animjs{
+  animation-iteration-count: 1;
 }
 
 #s_boxes{
@@ -236,11 +263,13 @@ padding: 50px 0 50px 0;
 left: -100%;
 animation-name: fog1;
   animation-duration: 300s;
+  animation-iteration-count: infinite;
 }
 
 #fog2{
   right: 0%;
   animation-name: fog2;
+  animation-iteration-count: infinite;
   animation-duration: 60s;
 }
 
@@ -248,6 +277,7 @@ animation-name: fog1;
 right: -50%;
 animation-name: fog3;
   animation-duration: 150s;
+  animation-iteration-count: infinite;
 }
 
 .s_fog{
