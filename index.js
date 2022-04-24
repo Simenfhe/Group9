@@ -56,3 +56,17 @@ function resetAnimationSimen(){
     window.location.reload()
 }
 
+const dAnimation = document.querySelector('.d-cardAnimation')
+
+const dObserver = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+        console.log(entry.target)
+        let sCheck = console.log(entry.isIntersecting)
+        if(entry.isIntersecting){
+            document.classlist.add("d-cardAnimation")
+            section.log("test")
+        }
+})
+} ,options);
+
+dObserver.observe(dAnimation)

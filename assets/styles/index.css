@@ -988,14 +988,6 @@ p, h1, h2, h3, h4, h5 {
           animation: d-pcCardAnimation .7s ease-out;
 }
 
-#cubasis {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #s_clouds {
   width: 100vw;
   height: 200px;
