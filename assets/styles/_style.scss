@@ -17,6 +17,10 @@
   justify-self: center;
 }
 
+p{
+  text-align: center;
+}
+
 body {
   background-color: $backgroundcolor;
 }
@@ -100,6 +104,11 @@ padding: 50px 0 50px 0;
 
 .d-cardAnimation {
   animation: d-pcCardAnimation .7s ease-out;
+}
+
+#cubasis{
+  display: grid;
+  align-items: center;
 }
 
 #s_clouds{

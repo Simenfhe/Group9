@@ -884,6 +884,10 @@
       justify-self: center;
 }
 
+p {
+  text-align: center;
+}
+
 body {
   background-color: #EBEBD3;
 }
@@ -987,6 +991,14 @@ p, h1, h2, h3, h4, h5 {
 .d-cardAnimation {
   -webkit-animation: d-pcCardAnimation .7s ease-out;
           animation: d-pcCardAnimation .7s ease-out;
+}
+
+#cubasis {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #s_clouds {
