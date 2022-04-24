@@ -35,9 +35,39 @@ p,h1,h2,h3,h4,h5{
   font-family: roboto,sans-serif;
 }
 
+#note_1{
+  position: absolute;
+  right: 310px;
+  top: 231px;
+}
+
+#note_2{
+  position: absolute;
+  left: 243px;
+  top: 200px;
+}
+
+#marak_1{
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+#marak_2{
+  position: absolute;
+  left: 152px;
+  top: 30px;
+}
+
+#marak_1, #marak_2{
+  animation-name: shake;
+  animation-duration: .5s;
+  animation-iteration-count: infinite
+  ;
+}
+
 .container {
   display: flex;
-  
 }
 
 .d-h2 {
