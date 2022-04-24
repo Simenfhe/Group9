@@ -54,6 +54,7 @@ function resetAnimationSimen(){
     window.location.reload()
 }
 
+
 const dObject1 = document.querySelector(".d-cardBox");
 const dObject2 = document.querySelector(".d-mobileCards");
 const dObject3 = document.querySelector(".d-pcMacCards");
