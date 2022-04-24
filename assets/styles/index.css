@@ -231,6 +231,11 @@
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 }
 
+@font-face {
+  font-family: OptimusPrincepsSemiBold;
+  src: url(/assets/fonts/OptimusPrincepsSemiBold.ttf);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .n-pad-container-anim, .n-s2-knob-container-anim {
     -webkit-animation-duration: 30s;
@@ -873,6 +878,10 @@ main {
           justify-content: center;
 }
 
+p, h1, h2, h3, h4, h5 {
+  font-family: roboto,sans-serif;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,6 +978,7 @@ main {
 
 #scene_mario {
   overflow: hidden;
+  max-height: 1000px;
 }
 
 #simen_scene_2 {
@@ -1000,16 +1010,19 @@ main {
   overflow: hidden;
 }
 
+#fog1, #fog2, #fog3 {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 #fog1 {
   left: -100%;
   -webkit-animation-name: fog1;
           animation-name: fog1;
   -webkit-animation-duration: 300s;
           animation-duration: 300s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 #fog2 {
@@ -1018,10 +1031,6 @@ main {
           animation-name: fog2;
   -webkit-animation-duration: 60s;
           animation-duration: 60s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 #fog3 {
@@ -1030,10 +1039,6 @@ main {
           animation-name: fog3;
   -webkit-animation-duration: 150s;
           animation-duration: 150s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 .s_fog {
@@ -1050,6 +1055,61 @@ main {
 
 .s_scene {
   height: 100vh;
+}
+
+#simen_scene_2_wrap {
+  height: 94vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+#s_scene_2_header {
+  margin: 0;
+  font-size: 5vh;
+}
+
+#simen_scene_2_wrap > p {
+  font-size: 2vh;
+  width: 35vw;
+  margin: 3vw;
+  display: inline-block;
+  border: 5px #bbbb6a solid;
+  background-color: #EBEBD3;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.s_scene_2_player {
+  width: 35vw;
+  display: inline-block;
+  border: 5px #bbbb6a solid;
+  background-color: #EBEBD3;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+}
+
+.control {
+  margin: 1rem auto;
+  width: 25vw;
+  display: block;
+}
+
+#end {
+  font-size: 10vh;
+  color: #fbfcfa;
+  text-shadow: 2px 2px 8px black, -2px 2px 8px black, 0 2px 8px black, 0 -2px 0 black;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  font-family: OptimusPrincepsSemiBold, Roboto, sans-serif;
 }
 
 article {
