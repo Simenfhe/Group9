@@ -36,6 +36,72 @@ p,h1,h2,h3,h4,h5{
   
 }
 
+.d-h2 {
+  margin: 0 auto;
+font-size: 70px;
+margin-bottom: 50px;
+max-width: 1000px;
+}
+
+.d-h3 {
+  margin: auto;
+font-size: 40px;
+}
+
+.d-p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.d-pcIcon,
+.d-mobileIcon {
+margin: 0 auto;
+max-width: 80%;
+}
+
+.d-pcBox,
+.d-mobileBox {
+  max-width: 450px;
+}
+
+.d-flMobileBox,
+.d-gbandBox,
+.d-cubasisBox,
+.d-abletonBox,
+.d-flBox,
+.d-logicBox {
+  max-width: 300px;
+}
+
+.d-cardBox,
+.d-mobileCards,
+.d-pcMacCards {
+margin: 0 auto;
+margin-bottom: 500px;
+max-width: 1000px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.d-pcBox,
+.d-mobileBox,
+.d-flMobileBox,
+.d-gbandBox,
+.d-cubasisBox,
+.d-flBox,
+.d-abletonBox,
+.d-logicBox {
+background-color: #b4adea;
+border-radius: 10px;
+box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
+padding: 50px 0 50px 0;
+}
+
+.d-cardAnimation {
+  animation: d-pcCardAnimation .7s ease-out;
+}
+
 #s_clouds{
   width: 100vw;
   height: 200px;

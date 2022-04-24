@@ -226,6 +226,32 @@
   }
 }
 
+@-webkit-keyframes d-pcCardAnimation {
+  0% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+@keyframes d-pcCardAnimation {
+  0% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
@@ -886,6 +912,81 @@ p, h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.d-h2 {
+  margin: 0 auto;
+  font-size: 70px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+.d-h3 {
+  margin: auto;
+  font-size: 40px;
+}
+
+.d-p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.d-pcIcon,
+.d-mobileIcon {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.d-pcBox,
+.d-mobileBox {
+  max-width: 450px;
+}
+
+.d-flMobileBox,
+.d-gbandBox,
+.d-cubasisBox,
+.d-abletonBox,
+.d-flBox,
+.d-logicBox {
+  max-width: 300px;
+}
+
+.d-cardBox,
+.d-mobileCards,
+.d-pcMacCards {
+  margin: 0 auto;
+  margin-bottom: 500px;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-pcBox,
+.d-mobileBox,
+.d-flMobileBox,
+.d-gbandBox,
+.d-cubasisBox,
+.d-flBox,
+.d-abletonBox,
+.d-logicBox {
+  background-color: #b4adea;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
+  padding: 50px 0 50px 0;
+}
+
+.d-cardAnimation {
+  -webkit-animation: d-pcCardAnimation .7s ease-out;
+          animation: d-pcCardAnimation .7s ease-out;
 }
 
 #s_clouds {

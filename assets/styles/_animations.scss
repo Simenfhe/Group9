@@ -39,3 +39,14 @@
 @keyframes n-anim-movement{
     100%{transform: translatey(500px);}
     }
+
+    @keyframes d-pcCardAnimation {
+        0% {
+            transform: translateY(150px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 100;
+        }
+    }
