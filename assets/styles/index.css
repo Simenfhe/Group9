@@ -969,6 +969,7 @@ main {
 
 #scene_mario {
   overflow: hidden;
+  max-height: 1000px;
 }
 
 #simen_scene_2 {
@@ -1000,16 +1001,19 @@ main {
   overflow: hidden;
 }
 
+#fog1, #fog2, #fog3 {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 #fog1 {
   left: -100%;
   -webkit-animation-name: fog1;
           animation-name: fog1;
   -webkit-animation-duration: 300s;
           animation-duration: 300s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 #fog2 {
@@ -1018,10 +1022,6 @@ main {
           animation-name: fog2;
   -webkit-animation-duration: 60s;
           animation-duration: 60s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 #fog3 {
@@ -1030,10 +1030,6 @@ main {
           animation-name: fog3;
   -webkit-animation-duration: 150s;
           animation-duration: 150s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 .s_fog {
@@ -1050,6 +1046,12 @@ main {
 
 .s_scene {
   height: 100vh;
+}
+
+#s_scene_2_header {
+  margin: 0;
+  font-family: roboto,sans-serif;
+  font-size: 5vh;
 }
 
 article {
