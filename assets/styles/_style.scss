@@ -114,7 +114,8 @@ max-width: 80%;
 }
 
 .d-cardBox,
-.d-iconBox {
+.d-mobileCards,
+.d-pcMacCards {
 margin: 0 auto;
 margin-bottom: 500px;
 max-width: 1000px;
@@ -126,7 +127,7 @@ justify-content: space-between;
 .d-pcBox,
 .d-mobileBox,
 .d-iconBox {
-background-color: #b4adea;
+background-color: $frame3color;
 border-radius: 10px;
 box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.5);
 padding: 50px 0 50px 0;
@@ -136,11 +137,6 @@ align-items: center;
 
 .d-cardAnimation {
   animation: d-pcCardAnimation .7s ease-out;
-}
-
-#cubasis{
-  display: grid;
-  align-items: center;
 }
 
 #s_clouds{
