@@ -1546,13 +1546,13 @@ article a:hover {
 .n-s2-boxleft {
   background-color: #B4ADEA;
   width: 20vw;
-  height: 25vh;
+  height: 35vh;
 }
 
 .n-s2-boxright {
   background-color: #B4ADEA;
   width: 20vw;
-  height: 50vh;
+  height: 60vh;
 }
 
 .n-s2-boxright p, h2, h3 {
@@ -1595,7 +1595,7 @@ article a:hover {
 .n-pad-container {
   position: absolute;
   margin-left: 60%;
-  margin-top: -26%;
+  margin-top: -29%;
 }
 
 .n-pad-container-anim {
@@ -1657,7 +1657,7 @@ article a:hover {
 .n-lbox-3 {
   background-color: #C4C4C4;
   width: 30vw;
-  height: 50vh;
+  height: 60vh;
   margin: 2%;
 }
 /*# sourceMappingURL=index.css.map */

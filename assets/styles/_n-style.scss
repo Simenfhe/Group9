@@ -144,14 +144,14 @@ article a:hover{
 .n-s2-boxleft{
   background-color:$frame3color;
   width:20vw;
-  height:25vh;
+  height:35vh;
 }
 
 
 .n-s2-boxright{
   background-color:$frame3color;
   width:20vw;
-  height:50vh;
+  height:60vh;
 }
 
 // ?? bug..
@@ -189,7 +189,7 @@ article a:hover{
 .n-pad-container{
   position:absolute;
   margin-left:60%;
-  margin-top:-26%;
+  margin-top:-29%;
 }
 
 .n-pad-container-anim{
@@ -246,6 +246,6 @@ article a:hover{
 .n-lbox-3 {
   background-color: $n-boxcolor1;
   width: 30vw;
-  height: 50vh;
+  height: 60vh;
   margin:2%;
 }
