@@ -35,7 +35,7 @@ nObserver.observe(nPadContainer);
 const section = document.querySelector('#s_mario');
 
 const options = {
-    threshold:.99
+    threshold:.9
 };
 
 const observer = new IntersectionObserver(function(entries, observer){
