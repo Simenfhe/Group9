@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+
+    --color-primary: rgb(10, 14, 27);
+    --color-secondary: rgb(224, 231, 255);
+    --color-accents: rgb(40, 6, 117);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1;
+    min-height: 100vh;
+    background-color: var(--color-primary);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    background-color: var(--color-accents);
+    color: var(--color-secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li {
+    color: var(--color-secondary);
+}
+
+header {
+    background-color: var(--color-accents);
+    padding: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+nav,
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    justify-content: space-evenly;
+    width: 30%;
+
+}
+
+
+
+.dropdownwrapper {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+
+.dropnav {
+    flex-direction: column;
+    text-align: right;
+}
+
+.close {
+    text-align: right;
+}
+
+.dropnav * {
+    width: 100%;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.close {
+    margin-bottom: 30vh;
+    display: none;
+}
+
+
+h1 {
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+p,
+.techlist,
+.cardlink {
+    font-size: 1.5rem;
+    max-width: 60ch;
+    padding: 0 4rem 0 4rem;
+    margin: 0 auto;
+}
+
+.techlist {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.techlist li {
+    margin-right: 1rem;
+    color: white;
+}
+
+.cardlink {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: underline
+}
+
+.cardimage {
+    height: 400px;
+    width: 800px;
+}
+
+#capmap {
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#bottom {
+    margin-bottom: 4rem;
+}
+
+.back {
+    transform: rotate3d(0, 1, 0, -179.9deg);
+    width: 800px;
+    height: 400px;
+    background-color: var(--color-accents);
+    position: absolute;
+    backface-visibility: hidden;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    place-items: baseline;
+}
+
+
+
+.bildet,
+.back {
+    transform: perspective(4000px) rotateY(0deg);
+    transition: transform 0.3s;
+}
+
+.back {
+    transform: perspective(4000px) rotateY(-179.9deg);
+}
+
+.jakka:hover .bildet {
+    transform: perspective(4000px) rotateY(179.9deg);
+    transition: transform 0.3s;
+
+}
+
+.jakka:hover .back {
+    transform: perspective(4000px) rotateY(0deg);
+    transition: transform 0.3s;
+
+}
+
+.jakka * {
+    backface-visibility: hidden;
+}
+
+.jakka h3 {
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.jakka {
+    display: flex;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    margin: 1rem;
+}
+
+
+
+@media (max-width: 1000px) {
+    .dropdown {
+        display: block;
+    }
+
+    .dropdownwrapper {
+        display: block;
+        padding: .1rem;
+        background: linear-gradient(0deg, var(--color-accents) 70%, blue 85%);
+        border-radius: 50%;
+    }
+
+
+
+
+    nav ul {
+        display: none;
+    }
+}
